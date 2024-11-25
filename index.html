@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Value</title>
+</head>
+<style>
+ .newcontainer{
+   border: 1px solid lightgray;
+   padding: 30px;
+   background-color: lightgrey;
+   border-radius: 20px;
+ }
+ h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+ }
+ input[type="tel"],
+select{
+    width: 100%;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+}
+</style>
+<body>
+    <div class="newcontainer">
+        <h1>Getting Value</h1>
+    <label>
+        Value 01 :
+        <input type="tel" id="value1">
+    </label>
+    <br>
+    <br>
+    <label>
+        Value 02 :
+        <input type="tel" id="value2">
+    </label>
+    <br>
+    <br>
+    <div id="container"></div>
+    <button onclick="plus()">Plus +</button>  <button onclick=" minus()">Minus -</button>
+    <br>
+    <br>
+    <button onclick="Multiply()">Multiply *</button>  <button onclick="Divide()">Divide</button>
+</div>
+
+    <script>
+        function plus()
+        {
+          let value1 = Number(document.getElementById("value1").value)
+          let value2 = Number(document.getElementById("value2").value)
+          document.getElementById("container").innerText =value1 + value2
+        }
+        function minus()
+        {
+          let value1 = Number(document.getElementById("value1").value)
+          let value2 = Number(document.getElementById("value2").value)
+          document.getElementById("container").innerText =value1 - value2
+        }
+        function Multiply()
+        {
+          let value1 = Number(document.getElementById("value1").value)
+          let value2 = Number(document.getElementById("value2").value)
+          document.getElementById("container").innerText =value1 * value2
+        }
+        function Divide()
+        {
+          let value1 = Number(document.getElementById("value1").value)
+          let value2 = Number(document.getElementById("value2").value)
+          document.getElementById("container").innerText =value1 % value2
+        }
+        
+    </script>
+</body>
+</html>
