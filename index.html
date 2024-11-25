@@ -12,13 +12,22 @@
    background-color: lightgrey;
    border-radius: 20px;
  }
+ .newcontainer:hover{
+    background-color: linen;
+    c
+ }
  h1{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
  }
  input[type="tel"],
 select{
-    width: 100%;
+    width: 100%; 
+}
+input[type="tel"],
+select:hover{
+    background-color:white;
+    color: black;
 }
 label{
     font-family: 'Courier New', Courier, monospace;
@@ -27,6 +36,10 @@ label{
 button{
     font-family: 'Courier New', Courier, monospace;
     width: 100px;
+}
+#butt:hover{
+    background-color: seagreen;
+    color: white;
 }
 </style>
 <body>
@@ -45,10 +58,10 @@ button{
     <br>
     <br>
     <div id="container"></div>
-    <button onclick="plus()">Plus +</button>  <button onclick=" minus()">Minus -</button>
+    <button onclick="plus()" id="butt">Plus +</button>  <button onclick=" minus()" id="butt">Minus -</button>
     <br>
     <br>
-    <button onclick="Multiply()">Multiply *</button>  <button onclick="Divide()">Divide</button>
+    <button onclick="Multiply()" id="butt">Multiply *</button>  <button onclick="Divide()" id="butt">Divide %</button>
 </div>
 
     <script>
