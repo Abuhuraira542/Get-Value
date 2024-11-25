@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    <label>
+        First Name :
+        <input type="tel" id="Value 1">
+    </label>
+    <div id="input1"></div>
+    <br>
+    <label>
+        Second Name :
+        <input type="tel" id="Value 2">
+    </label>
+    <div id="input2"></div>
+    <br>
+    <br>
+    <button onclick="fill()">Submit</button>
+</div>
+<script>
+    function fill()
+    {
+       let firstvalue = Number(document.getElementById("Value 1").value1)
+       let Secondvalue = Number(document.getElementById("Value 2").value2)
+       document.getElementById("input2").innerText=firstvalue + " " + Secondvalue;
+    }
+</script>
+</body>
+</html>
