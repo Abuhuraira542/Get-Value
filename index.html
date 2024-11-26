@@ -21,6 +21,7 @@
     text-align: center;
  }
  input[type="tel"],
+ input[type="text"],
 select{
     width: 100%;
 }
@@ -40,6 +41,13 @@ button{
 #butt:hover{
     background-color: seagreen;
     color: white;
+}
+#container{
+    width: 10%;
+    background-color:white;
+    color: black;
+    margin-bottom: 10px;
+    
 }
 </style>
 <body>
@@ -63,8 +71,33 @@ button{
     <br>
     <button onclick="Multiply()" id="butt">Multiply *</button>  <button onclick="Divide()" id="butt">Divide %</button>
 </div>
+<br>
+<br>
+
+<div class="newcontainer">
+    <label>
+      Username :
+      <input type="text" id="user1">
+    </label>
+    <br>
+    <br>
+    <label>
+        Father Name :
+        <input type="text" id="father1">
+    </label>
+    <br>
+    <br>
+    <div id="container1"></div>
+    <button id="butt" onclick="Sub()">Submit</button>
+</div>
 
     <script>
+        function Sub()
+        {
+            let username = document.getElementById("user1").value;
+            let secondname = document.getElementById("father1").value;
+            document.getElementById("container1").innerText=username + " " + secondname
+        }
         function plus()
         {
           let value1 = Number(document.getElementById("value1").value)
